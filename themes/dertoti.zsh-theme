@@ -5,9 +5,9 @@
 # * The Git branch and its 'dirty' state
 # 
 # Colors are at the top so you can mess with those separately if you like.
-if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
-DERTOTI_COLOR="%{$fg_bold[$NCOLOR]%}"
-DERTOTI_USER_COLOR="%{$fg[green]%}"
+if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
+DERTOTI_COLOR="%{$fg_bold[white]%}"
+DERTOTI_USER_COLOR="%{$fg[$NCOLOR]%}"
 DERTOTI_CONNECT_COLOR="%{$fg[green]%}"
 DERTOTI_PC_COLOR="%{$fg[green]%}"
 DERTOTI_DIR_COLOR="%{$fg[yellow]%}"
